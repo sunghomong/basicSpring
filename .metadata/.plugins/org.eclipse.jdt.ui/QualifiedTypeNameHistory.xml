@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="spring.exception.IdPasswordNotMatchingException"/>
+<fullyQualifiedTypeName name="spring.dao.MemberDao"/>
+<fullyQualifiedTypeName name="spring.exception.AlreadyExistingMemberException"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="spring.exception.MemberNotFoundException"/>
+<fullyQualifiedTypeName name="spring.service.ChangePasswordService"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="spring.vo.Member"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="spring.printer.VersionPrinter"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+<fullyQualifiedTypeName name="spring.service.MemberRegisterService"/>
+<fullyQualifiedTypeName name="spring.printer.MemberInfoPrinter"/>
+<fullyQualifiedTypeName name="spring.vo.RegisterRequest"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+</qualifiedTypeNameHistroy>

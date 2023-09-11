@@ -1,0 +1,7 @@
+기능 (service)
+	- 회원 가입 기능
+	1) 이메일, 비밀번호, 이름등을 입력 받아야 함 : RegisterRequest
+	2) 받아온 정보를 통해서 기능을 구현 : MemberRegisterService
+		- 이미 가입된 이메일이 있다면 가입 거부(예외)
+		- 가입된 이메일이 아니라면 회원 정보를 담는 객체에 옮겨 담는다 : Member
+		- 저장된 회원정보를 저장소에 전송 : MemberDao
