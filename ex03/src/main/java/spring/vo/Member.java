@@ -11,7 +11,7 @@ public class Member { // DB 저장용
 	private String password;
 	private String name;
 	private Date registerDate;
-
+	
 	public Member(String email, String password, String name, Date registerDate) {
 		this.email = email;
 		this.password = password;
@@ -26,7 +26,7 @@ public class Member { // DB 저장용
 		this.password = newPassword;
 	}
 	
-		
+	
 	public Long getId() {
 		return id;
 	}
@@ -59,5 +59,4 @@ public class Member { // DB 저장용
 	}
 	
 	
-
 }

@@ -11,15 +11,12 @@ import spring.vo.RegisterRequest;
 
 public class MemberRegisterService { // 회원 가입 기능
 	
-	private MemberDao dao; // = new MemberDao();
+	private MemberDao dao;// = new MemberDao();
 	
-	@Autowired   // 앞으로 이 생성자는 자동주입을 통해서 객체를 생성
+	@Autowired  // 앞으로 자동 주입으로 빈 중에서 적절한 Dao 객체를 주입해준다.
 	public MemberRegisterService(MemberDao dao) {
 		this.dao = dao;
 	}
-
-	
-	
 	
 	public void regist(RegisterRequest req) { // 회원 가입 기능 메서드
 		Member member = dao.selectByEmail(req.getEmail());
@@ -28,14 +25,9 @@ public class MemberRegisterService { // 회원 가입 기능
 			throw new AlreadyExistingMemberException("이메일 중복");
 		}
 		
-		Member newMember = 
-				new Member(req.getEmail(),req.getPassword(),req.getName(),new Date());
+		
+		Member newMember = new Member(req.getEmail(),req.getPassword(),req.getName(),new Date());
 		
 		dao.insert(newMember);
-		
 	}
-
-	
-	
-	
 }

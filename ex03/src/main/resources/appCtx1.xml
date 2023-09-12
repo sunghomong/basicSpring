@@ -8,18 +8,21 @@
 	<!-- 자동 주입이 동작하려면 -->
 	<context:annotation-config />
 	
-	
+
 	<bean id="memberDao" class="spring.dao.MemberDao"/>
-
+	
 	<bean id="memberRegSvc" class="spring.service.MemberRegisterService">
-	<!--	<constructor-arg ref="memberDao"/>  명시적 의존 주입 -->
+		<!-- <constructor-arg ref="memberDao"/>  명시적 의존 주입 -->
 	</bean>
-
-	<bean id="memberPrinter" class="spring.printer.MemberPrinter"/>
-
+	
+	<bean id="memberPrinter" class="spring.printer.MemberInfoPrinter"/>
+	
 	<bean id="infoPrinter" class="spring.printer.MemberInfoPrinter">
-   <!-- <property name="memDao" ref="memberDao"/> 
+		<!-- <property name="memDao" ref="memberDao"/>
 		<property name="printer" ref="memberPrinter"/> -->
 	</bean>
-
+	
+	
+	 
+	
 </beans>
