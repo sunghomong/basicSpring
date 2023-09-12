@@ -1,7 +1,7 @@
 package spring.vo;
 
 public class RegisterRequest { // 프론트로부터 오는 데이터
-
+	
 	private String email;
 	private String password;
 	private String confirmPassword;
@@ -38,5 +38,5 @@ public class RegisterRequest { // 프론트로부터 오는 데이터
 	}
 	
 	
-	
+
 }

@@ -6,7 +6,4 @@ public class AlreadyExistingMemberException extends RuntimeException{
 		super(message);
 	}
 	
-	
-	
-	
 }

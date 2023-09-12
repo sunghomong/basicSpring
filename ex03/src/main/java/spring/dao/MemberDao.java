@@ -25,10 +25,9 @@ public class MemberDao { // DB 연결해서 쿼리를 보내고 데이터를 받
 		return map.get(email);
 	}
 	
-	public Collection<Member> selectAll() {
+	public Collection<Member> selectAll(){
 		return map.values();
 	}
 	
-	
-	
+
 }
